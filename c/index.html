@@ -16,72 +16,41 @@
     <main>
     <h2 id=" Ovladače zařízení"> Ovladače zařízení</h2>
     <p>
-        <strong>Ovladače zařízení</strong> (<em>device drivers</em>) je podmínkou
-        využití technického vybavení
-        (<a href="https://en.wikipedia.org/wiki/Computer_hardware">hardware</a>).
-        V raných dobách počítačové éry
-        byly programy vytvářeny vždy pro konkrétní hardware. V okamžiku, kdy
-        počítače začaly být produkovány ve větších sériích, objevila se i
-        potřeba vývoje speciálních systémových programů, které by obstaraly
-        základní operace s hardwarem a nabídly prostředí pro běh aplikací, tj.
-        programů určených pro konkrétní účely.
+        <strong>Ovladače zařízení</strong> (<em>device drivers</em>) jsou speciální 
+        programy, které zajišťují komunikaci OS s určitým technickým vybavením. 
+        Bez potřebného ovladače nemůže zařízení správně fungovat. Standardní ovladače 
+        pro běžná zařízení, jakými jsou  flash  disk,  myš,  klávesnice  nebo  digitální 
+        fotoaparáty,  bývají  součástí moderních OS. Instalaci zařízení ve Windows 
+        usnadňuje standard <strong>Plug and Play</strong> (PnP - „připoj a hrej“), který zajistí 
+        automatickou detekci nově připojeného hardware a případně i automatické 
+        vyhledání potřebného ovladače. Není-li driver nalezen přímo v OS, musí být 
+        použit externí instalátor ovladače z disku dodaného se zařízením 
+        (např. z instalačního CD k tiskárně), nebo stažený z internetových 
+        stránek, nejlépe přímo od výrobce. Nevhodně zvolený ovladač může v 
+        krajním případě způsobit nefunkčnost zařízení, někdy i celého OS.
     </p>
-    <h2>Operační systémy</h2>
+    <h2 id="Firmware">Firmware</h2>
     <p>
-      Základním programovým vybavením počítačů (a jim podobných zařízení) jsou
-      operační systémy
-      (<a href="https://en.wikipedia.org/wiki/Operating_system"><abbr title="Operation System">OS</abbr></a>). Jejich
-      nejdůležitější funkcí
-      je zajištění řízení hardware. To má na starosti jádro systému, které
-      tvoří subsystémy pro správu procesoru, paměti, diskových médií a dalších
-      zařízení. Jádro pro své operace vyžaduje instalaci ovladačů jednotlivých
-      zařízení (<mark>drivers</mark>) a s jejich pomocí zpřístupňuje technické vybavení
-      běžícím procesům.
+        Programové vybavení, které slouží pro řízení nějakého vestavěného 
+        systému (embedded system). Firmware řídí například kalkulačky, počítačové 
+        komponenty <em>(pevný disk, router...)</em>, mobilní telefon, digitální fotoaparát atd. 
+        Dříve byla aktualizace firmwaru realizována nahrazením paměťového média 
+        obsahujícího <strong>firmware</strong> (např. výměna ROM paměti), dnes může být novější verze 
+        firmware přepsána díky používaným flash pamětem. Základním firmwarem v počítači 
+        je <a href="https://cs.wikipedia.org/wiki/BIOS"><abbr title="">BIOS</abbr></a> <em>(Basic Output-Input System)</em>, který zajišťuje především start počítače a 
+        umožňuje konfiguraci základní desky i připojeného hardware.
     </p>
-    <h3>Aplikační rozhraní</h3>
+    <h2 id="Utility">Utility</h2>
     <p>
-      Nezbytnou součástí operačních systémů je aplikační rozhraní (API -
-      Application Programming Interface), které nabízí programátorům
-      prostředky pro vývoj aplikací pro daný systém. Uživatelské rozhraní
-      slouží k ovládání OS a k spouštění aplikací. Zatímco starší OS se
-      ovládaly častěji prostřednictvím příkazového řádku (CLI - Command Line
-      Interface), moderní systémy poskytují grafické uživatelské rozhraní (GUI
-      - Graphic User Interface) založené na oknech a grafických prvcích.
-    </p>
-    <h3>Historie OS</h3>
-    <p>
-      Na počátku vývoje moderních OS byl víceúlohový a víceuživatelský systém
-      UNIX, který se od 70. let používal v sálových počítačích i
-      minipočítačích. Jeho principy využily i další OS. V 80. letech minulého
-      století si vzájemně konkurovaly systémy firmy Microsoft (MS DOS),
-      instalované na počítačích IBM PC, a firmy Apple (Mac OS), která
-      rozvinula myšlenky vývojářů společnosti Xerox a začala jako první
-      používat grafické uživatelské rozhraní. To se stalo také základem MS
-      Windows, jenž hrál prim především na přelomu tisíciletí. V té době už
-      získával stále větší popularitu volně šiřitelný systém Linux,
-      pojmenovaný podle svého tvůrce Linuse Torvaldse a staršího vzoru UNIXu.
-      Zatímco operační systémy Windows dominují především na osobních
-      počítačích v domácnostech i kancelářích, různé linuxové distribuce jsou
-      velmi často instalovány na síťových serverech.
-    </p>
-    <figure>
-      <img src="linux.jpg" alt="Logo Linuxu" width="100">
-      <figcaption>Logo Linuxu</figcaption>
-    </figure>
-    <h2>Typy operačních systémů</h2>
-    <p>
-      Současné OS rozdělujeme nejčastěji podle typů zařízení, pro která jsou
-      určeny. Existují systémy pro síťové servery (např. MS Windows 2012
-      Server, Linux, Unix), pro běžné osobní počítače - desktopy, notebooky,
-      netbooky (např. MS Windows, Linux Ubuntu, OS X), pro mobilní zařízení
-      (Android, Symbian, Windows Phone, iOS) i speciální RTOS (Real-Time
-      Operating System - systémy reálného času), které zajišťují provoz
-      „chytrých“ zařízení, jakými jsou robotické kamery využívané pro
-      sportovní přenosy, měřící přístroje na orbitálních stanicích nebo
-      jednotky pro řízení různých průmyslových procesů. Zatímco u desktopového
-      systému je možné pozdržet dokončení některých operací a provádět
-      paralelně jiné operace, v případě RTOS je nezbytné provádět operace bez
-      prodlevy a s vysokou spolehlivostí v reálném čase.
+        Jsou  menší  pomocné  programy,  které  umožňují  vykonávat  servisní operace potřebné 
+        k fungování počítače. Patří k nim komprimační programy, diagnostické a testovací 
+        programy, utility pro kontrolu a optimalizaci operačního systému, různé konverzní 
+        (převodní) programy, které umí přehledně zobrazit obrázky, převést je z jednoho 
+        formátu na jiný atd. <strong>Řada utilit</strong> je integrální součástí OS. Příkladem může být 
+        <em>Správce úloh</em> ve Windows <em>(Task Manager)</em>, který umožňuje nejen správu 
+        spuštěných programů a služeb, ale i sledování využití systémových zdrojů (procesoru, paměti). 
+        Dalšími užitečnými utilitami jsou nástroje pro <strong>defragmentaci</strong> <em>(defrag)</em> nebo <strong>kontrolu 
+        disku</strong> <em>(chkdsk)</em>. Některé utility lze spouštět z příkazového řádku <em>(ping, ipconfig apod.)</em>
     </p>
   </main>
   <footer>
