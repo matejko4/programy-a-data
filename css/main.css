@@ -8,7 +8,7 @@ body {
 
 h1 {
     text-align: center;
-    color: white; 
+    color: rgb(255, 255, 255); 
     font-size: 50px;
     margin-top: 50px; 
     text-transform: uppercase; 
@@ -16,7 +16,7 @@ h1 {
 
 h2 {
     text-align: center; 
-    color: rgb(85, 40, 40); 
+    color: rgb(0, 0, 0); 
     font-size: 30px;
     margin-top: 30px;
     text-transform: uppercase; 
@@ -40,7 +40,7 @@ main {
 
 .flex-container {
     display: flex; 
-    background-color: rgb(3, 16, 28); 
+    background-color: rgb(255, 255, 255); 
     flex-wrap: wrap; 
 }
 
